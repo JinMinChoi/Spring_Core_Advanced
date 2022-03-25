@@ -48,7 +48,7 @@ public class HelloTraceV1 {
     //level=1    |-->
     //level=2    |   |-->
     //level=2 ex |   |<X-
-    private String addSpace(String prefix, int level) {
+    private static String addSpace(String prefix, int level) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < level; i++) {
             sb.append((i == level - 1) ? "|" + prefix : "|   ");
